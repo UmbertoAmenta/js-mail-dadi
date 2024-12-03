@@ -4,17 +4,29 @@ Prima di partire a scrivere codice poniamoci qualche domanda:
 Che ci sia un array da qualche parte?
 Se dobbiamo confrontare qualcosa che "cosa" ci serve?*/
 
+
 // |Chiedere| all'utente di avviare la sfida lanciando il suo dado a 6 facce
+let isReady = confirm("Sfiderai la sorte a dadi")
+if (isReady) {
+    alert("Si LANCIA!")
+} else {
+    alert("Troppo tardi, la mia non era una domanda")
+}
+
+
+
 // |Generare| un numero randomico tra 1 e 6 per il giocatore
 
 const userRoll = Math.floor(Math.random() * 6) +1
 console.log("lancio giocatore", userRoll)
 
 
+
 // |Generare| un numero randomico tra 1 e 6 per il computer
 
 const cpuRoll = Math.floor(Math.random() * 6) +1
 console.log("lancio cpu", cpuRoll)
+
 
 
 // |Confrontare| il risultato dei dadi
